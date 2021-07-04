@@ -1,3 +1,7 @@
+# Description
+This is the progressbar which looks like this: 
+![изображение](https://user-images.githubusercontent.com/30467732/124377030-0df0e280-dcd4-11eb-996d-7974aa6ca1f8.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
