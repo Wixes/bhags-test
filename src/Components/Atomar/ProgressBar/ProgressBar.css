@@ -1,0 +1,73 @@
+.progress-bar {
+    font-size: 2rem;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 1.5em;
+}
+
+.progress-bar::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    width: 100%;
+    height: 0.25em;
+    background-color: var(--color-gray);
+    transform: translate(0, 50%);
+}
+
+.progress-bar__item {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.progress-bar__item > span,
+.progress-bar__item > button {
+    transition: color 0.8s, border-color 0.8s;
+}
+
+.progress-bar__item--isCompleted > span,
+.progress-bar__item--isCompleted > button {
+    color: var(--color-purple);
+    border-color: var(--color-purple);
+    transition: color 0.8s, border-color 0.8s;
+}
+
+.progress-bar__title {
+    position: absolute;
+    font-weight: 500;
+    top: -120%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: var(--color-gray);
+}
+
+.progress-bar__button {
+    font-size: inherit;
+    cursor: pointer;
+    width: 1.2em;
+    height: 1.2em;
+    border: 0.25em solid var(--color-gray);
+    border-radius: 50%;
+    background-color: var(--color-white);
+}
+
+.progress-bar__completion {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    width: 100%;
+    height: 0.25em;
+    width: 0;
+    background-color: var(--color-purple);
+    transform: translate(0, 50%);
+    transition: width 0.8s;
+}

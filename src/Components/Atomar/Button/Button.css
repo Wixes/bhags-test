@@ -1,0 +1,15 @@
+.button {
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: 0.15em solid var(--color-purple);
+    border-radius: 0.3em;
+    padding: 0.5em;
+    background-color: var(--color-white);
+    color: var(--color-purple);
+}
+
+.button[disabled] {
+    color: var(--color-light-purple);
+    border-color: var(--color-light-purple);
+}
